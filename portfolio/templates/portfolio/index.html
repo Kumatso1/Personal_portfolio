@@ -1,0 +1,168 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dalison Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/style.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/9a56d7ed9a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://example.com/path/to/your/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <!-------------------------------Header-------------------------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="{% static 'portfolio/images/logo1.jpeg' %}" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Dalison</span> <br>Chimchere <br>From Malawi</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------------About-------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="{% static 'portfolio/images/Kumatso.png' %}">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Energetic and detail-oriented Biomedical Engineer with a strong 
+                        background in medical equipment management, maintenance, 
+                        and repair. Passionate about advancing healthcare technology 
+                        and committed to contributing to Abbott's success by ensuring 
+                        the reliability and efficiency of critical medical devices. 
+                        Proven track record of minimizing downtime through effective 
+                        troubleshooting and preventive maintenance. Skilled in building 
+                        strong relationships and exhibiting excellent communication skills 
+                        to foster collaboration with internal and external stakeholders. 
+                        Adept at motivating team members to achieve outstanding results, 
+                        enhancing the quality of patient care. Enthusiastic about joining 
+                        Abbott as an Engineering Co-op and making a positive impact on 
+                        the company's growth and innovation in medical solutions. Willing to have 
+                        visa sponsorship and relocation costs deducted within six months 
+                        if work authorization presents a barrier for Abbott to hire me.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" data-tab="skills">Skills</p>
+                        <p class="tab-links" data-tab="experience">Experience</p>
+                        <p class="tab-links" data-tab="education">Education</p>
+                    </div>
+                        
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Mob App Development</li>
+                            <li><span>Photography</span><br>Photoshop</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020 - Present</span><br>UI/UX Designer</li>
+                            <li><span>2018 - 2020</span><br>Web Developer</li>
+                            <li><span>2016 - 2018</span><br>Graphics Designer</li>
+                            <li><span>2014 - 2016</span><br>Digital Animator</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>March, 2024 -July, 2024</span><br>Software Engineering Bootcamp<span><br>From HyperionDev</span></li>
+                            <li><span>2021 - 2025</span><br>Bachelor of technology in Electronics and Communication Engineering
+                            <span><br>From Maharishi Markandeshwar (Deemed To Be University),Mullana</span></li>
+                            <li><span>2015 - 2021</span><br>Bachelor of Engineering Biomedical Engineering(Hons)
+                            <span><br>From Malawi University of Science and Technology (MUST)</span></li>
+                            <li><span>2010 - 2014</span><br>MSCE
+                            <span><br>From Madisi Secondary School</span></li>
+                        </ul>
+                    </div>
+                    
+                    </div>
+                       
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!-------------------------Services-------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Designing Web/App interfaces</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web App Development</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>Mob App Development</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------Portfolio-------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="{% static 'portfolio/images/work-1.jpg' %}">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>My Project</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="{% static 'portfolio/images/work-2.png' %}">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>My Project</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="{% static 'portfolio/images/work-3.png' %}">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>My Project</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------------------------Contact-------------------------------------->
+    {% include 'portfolio/contact.html' %}
+    
+    <!-- Link to main.js -->
+    <script src="{% static 'portfolio/js/main.js' %}"></script>
+</body>
+</html>

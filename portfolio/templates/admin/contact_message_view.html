@@ -1,0 +1,8 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+{% block content %}
+  <h1>{{ obj.name }}</h1>
+  <p><strong>Email:</strong> {{ obj.email }}</p>
+  <p><strong>Message:</strong> {{ obj.message }}</p>
+  <p><a href="{% url 'admin:portfolio_contactmessage_change' obj.pk %}">Edit</a></p>
+{% endblock %}

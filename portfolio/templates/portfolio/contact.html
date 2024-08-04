@@ -1,0 +1,33 @@
+<!-- contact.html -->
+{% load static %}
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>dchimchere2017@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 829 565 4008</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/dalison.chimchere.5"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dalison-chimchere-13a069308/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form method="post" action="{% url 'contact' %}">
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © PlatnumTech 2024 Production <i class="fa fa-heart" aria-hidden="true"></i>. All rights reserved</p>
+        <p>Designed by Dalison Chimchere</p>
+    </div>
+</div>
